@@ -383,6 +383,18 @@ canvas#waveC{position:fixed;bottom:0;left:0;width:100%;height:210px;pointer-even
 .reveal{opacity:0;transform:translateY(16px);transition:opacity 0.5s ease,transform 0.5s ease;}
 .reveal.visible{opacity:1;transform:none;}
 
+
+/* ── THEME ICON SYSTEM ── */
+.theme-icon,.cat-icon,.tab-icon,.contact-icon{display:inline-flex;align-items:center;justify-content:center;color:var(--blue2);background:rgba(74,143,212,0.10);border:1px solid rgba(74,143,212,0.26);box-shadow:0 0 12px rgba(74,143,212,0.08);font-weight:800;line-height:1;}
+.theme-icon{width:34px;height:34px;border-radius:8px;font-size:0.82rem;margin-bottom:12px;}
+.cat-icon,.tab-icon{width:18px;height:18px;border-radius:5px;font-size:0.62rem;margin-right:6px;vertical-align:middle;}
+.contact-icon{width:38px;height:38px;border-radius:8px;font-size:0.78rem;flex-shrink:0;}
+.cert-mini-badge{background:linear-gradient(135deg,#0078d4,#005a9e);color:#fff;width:52px;height:52px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:0.65rem;font-weight:800;letter-spacing:0.02em;text-align:center;line-height:1.2;}
+.cert-wip{gap:0;background:rgba(74,143,212,0.08);}
+.contact-open-box{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:18px 20px;margin-bottom:18px;}
+.contact-pill-row{display:flex;flex-wrap:wrap;gap:7px;margin-top:10px;}
+.contact-pill{font-size:0.72rem;font-weight:500;color:var(--blue2);background:rgba(74,143,212,0.10);border:1px solid rgba(74,143,212,0.22);border-radius:100px;padding:4px 10px;}
+
 /* ── RESPONSIVE ── */
 @media(max-width:900px){
   nav{padding:0 16px;}
@@ -428,7 +440,7 @@ canvas#waveC{position:fixed;bottom:0;left:0;width:100%;height:210px;pointer-even
     <li><a href="#" onclick="nav(event,'contact')">Contact</a></li>
   </ul>
   <div style="display:flex;gap:8px;align-items:center;">
-  <a href="https://github.com/prachi8833/Portfolio/blob/main/PRACHI_PATEL-Resume.pdf?raw=true" target="_blank" class="nav-resume">Download CV</a>
+  <a href="https://github.com/prachi8833/Portfolio/blob/177dc0c882bf6541aa41158ac6e7cf7b20c6f86f/Resume%20-Prachi_Patel.pdf?raw=true" target="_blank" class="nav-resume">Download CV</a>
   <a class="nav-cta" onclick="showPage('contact')">Let's Connect</a>
 </div>
 </nav>
@@ -449,10 +461,10 @@ canvas#waveC{position:fixed;bottom:0;left:0;width:100%;height:210px;pointer-even
       <a class="btn-o" href="https://linkedin.com/in/prachi8833" target="_blank">LinkedIn ↗</a>
     </div>
     <div class="home-stats">
-      <div class="stat"><div class="stat-n">4+</div><div class="stat-l">Years Experience</div></div>
+      <div class="stat"><div class="stat-n">5+</div><div class="stat-l">Years Experience</div></div>
       <div class="stat"><div class="stat-n">500+</div><div class="stat-l">Users Managed</div></div>
       <div class="stat"><div class="stat-n">800+</div><div class="stat-l">Endpoints Secured</div></div>
-      <div class="stat"><div class="stat-n">10</div><div class="stat-l">Projects Built</div></div>
+      <div class="stat"><div class="stat-n">10+</div><div class="stat-l">Projects Built</div></div>
     </div>
   </div>
   <div class="hero-right">
@@ -478,7 +490,7 @@ canvas#waveC{position:fixed;bottom:0;left:0;width:100%;height:210px;pointer-even
       <div class="about-content">
         <p class="about-im">I'm</p>
         <h1 class="about-name">Prachi Patel,</h1>
-        <p class="about-p ap1">a multi-disciplinary technology professional based in Vancouver, currently working as a Cloud &amp; Systems Administrator in the financial sector. I design and build secure, scalable systems using <span class="ab">Microsoft 365</span> and <span class="ab">Azure</span>.</p>
+        <p class="about-p ap1">a multi-disciplinary technology professional based in Vancouver, currently working as a Cloud Systems Engineer in the financial sector. I design and build secure, scalable systems using <span class="ab">Microsoft 365</span> and <span class="ab">Azure</span>.</p>
         <p class="about-p ap2">I'm passionate about innovation and driven by impact. I enjoy working on cutting-edge projects, building intelligent automation, and creating solutions that make a real difference.</p>
         <p class="about-p ap3">When I'm not working, I like to stay active — whether it's playing cricket or pickleball, going for hikes, or exploring lakes and beaches. I enjoy travelling, learning about new technologies, and unwinding with documentaries that offer new perspectives.</p>
         <div class="about-tagline">
@@ -506,21 +518,21 @@ canvas#waveC{position:fixed;bottom:0;left:0;width:100%;height:210px;pointer-even
   </div>
   <div class="skill-arch reveal">
     <div class="arch-top-row">
-      <div class="sk-card"><div class="sk-icon">🔐</div><div class="sk-head">Identity &amp; Access</div><div class="sk-items"><div class="sk-item hi">Entra ID</div><div class="sk-item hi">RBAC</div><div class="sk-item hi">MFA / SSPR</div><div class="sk-item">Conditional Access</div><div class="sk-item">SSO</div><div class="sk-item">Access Reviews</div></div></div>
-      <div class="sk-card"><div class="sk-icon">📧</div><div class="sk-head">Microsoft 365</div><div class="sk-items"><div class="sk-item hi">Exchange Online</div><div class="sk-item hi">SharePoint</div><div class="sk-item">Teams</div><div class="sk-item">OneDrive</div><div class="sk-item">Tenant Admin</div><div class="sk-item">License Mgmt</div></div></div>
-      <div class="sk-card"><div class="sk-icon">🛡️</div><div class="sk-head">Endpoint &amp; Security</div><div class="sk-items"><div class="sk-item hi">Intune MDM/MAM</div><div class="sk-item hi">Autopilot</div><div class="sk-item">MS Defender</div><div class="sk-item">BitLocker</div><div class="sk-item">DLP</div><div class="sk-item">Security Baselines</div></div></div>
-      <div class="sk-card"><div class="sk-icon">☁️</div><div class="sk-head">Cloud &amp; Infrastructure</div><div class="sk-items"><div class="sk-item hi">Microsoft Azure</div><div class="sk-item hi">AWS</div><div class="sk-item">Virtual Networks</div><div class="sk-item">DNS / DHCP</div><div class="sk-item">VPN / VLAN</div><div class="sk-item">Windows Server</div></div></div>
-      <div class="sk-card"><div class="sk-icon">🗄️</div><div class="sk-head">Data Protection</div><div class="sk-items"><div class="sk-item hi">Datto SaaS Backup</div><div class="sk-item hi">M365 Data Protection</div><div class="sk-item">eDiscovery</div><div class="sk-item">Retention Policies</div><div class="sk-item">Litigation Hold</div><div class="sk-item">HIPAA / PCI</div></div></div>
-      <div class="sk-card"><div class="sk-icon">⚡</div><div class="sk-head">Automation &amp; Scripting</div><div class="sk-items"><div class="sk-item hi">PowerShell</div><div class="sk-item hi">Graph API</div><div class="sk-item">JavaScript</div><div class="sk-item">REST API / HTTP</div><div class="sk-item">JSON</div><div class="sk-item">M365 Workflows</div></div></div>
+      <div class="sk-card"><div class="theme-icon">ID</div><div class="sk-head">Identity &amp; Access</div><div class="sk-items"><div class="sk-item hi">Entra ID</div><div class="sk-item hi">RBAC</div><div class="sk-item hi">MFA / SSPR</div><div class="sk-item">Conditional Access</div><div class="sk-item">SSO</div><div class="sk-item">Access Reviews</div><div class="sk-item">Identity Governance</div></div></div>
+      <div class="sk-card"><div class="theme-icon">M365</div><div class="sk-head">Microsoft 365</div><div class="sk-items"><div class="sk-item hi">Exchange Online Admin</div><div class="sk-item hi">SharePoint Online Admin</div><div class="sk-item">Teams Administration</div><div class="sk-item">OneDrive</div><div class="sk-item">Tenant Administration</div><div class="sk-item">License Administration</div></div></div>
+      <div class="sk-card"><div class="theme-icon">SEC</div><div class="sk-head">Endpoint &amp; Security</div><div class="sk-items"><div class="sk-item hi">Intune MDM/MAM</div><div class="sk-item hi">Autopilot</div><div class="sk-item">Microsoft Defender</div><div class="sk-item">BitLocker</div><div class="sk-item">DLP</div><div class="sk-item">Security Baselines</div><div class="sk-item">Zero Trust Architecture</div></div></div>
+      <div class="sk-card"><div class="theme-icon">CLD</div><div class="sk-head">Cloud &amp; Infrastructure</div><div class="sk-items"><div class="sk-item hi">Microsoft Azure</div><div class="sk-item hi">AWS</div><div class="sk-item">Azure Resource Management</div><div class="sk-item">Azure Virtual Networks</div><div class="sk-item">Cloud Governance</div><div class="sk-item">Subscription Management</div><div class="sk-item">Multi-Tenant Administration</div></div></div>
+      <div class="sk-card"><div class="theme-icon">DLP</div><div class="sk-head">Data Protection</div><div class="sk-items"><div class="sk-item hi">Datto SaaS Backup</div><div class="sk-item hi">M365 Data Protection</div><div class="sk-item">Backup &amp; Disaster Recovery</div><div class="sk-item">eDiscovery</div><div class="sk-item">Retention Policies</div><div class="sk-item">Litigation Hold</div><div class="sk-item">HIPAA / PCI</div></div></div>
+      <div class="sk-card"><div class="theme-icon">AUT</div><div class="sk-head">Automation &amp; Scripting</div><div class="sk-items"><div class="sk-item hi">PowerShell</div><div class="sk-item hi">Microsoft Graph Automation</div><div class="sk-item">Azure CLI</div><div class="sk-item">REST API / HTTP</div><div class="sk-item">JSON Data Handling</div><div class="sk-item">Workflow Orchestration</div><div class="sk-item">Identity Automation</div></div></div></div>
     </div>
     <div class="arch-connector"><div class="arch-line"></div><div class="arch-center-dot"></div></div>
     <div class="arch-bot-row">
-      <div class="sk-card"><div class="sk-icon">💻</div><div class="sk-head">Infrastructure as Code</div><div class="sk-items"><div class="sk-item">Terraform (Learning)</div><div class="sk-item">ARM / Bicep</div></div></div>
-      <div class="sk-card"><div class="sk-icon">🚀</div><div class="sk-head">DevOps &amp; Tools</div><div class="sk-items"><div class="sk-item hi">Git / GitHub</div><div class="sk-item">HTML / JavaScript</div><div class="sk-item">Basic CI/CD</div><div class="sk-item">Vercel</div></div></div>
-      <div class="sk-card"><div class="sk-icon">⚙️</div><div class="sk-head">Power Platform</div><div class="sk-items"><div class="sk-item hi">Power Apps</div><div class="sk-item hi">Power Automate</div><div class="sk-item">Microsoft Lists</div><div class="sk-item">API Integrations</div><div class="sk-item">Process Orchestration</div></div></div>
-      <div class="sk-card"><div class="sk-icon">📊</div><div class="sk-head">Data &amp; Querying</div><div class="sk-items"><div class="sk-item">SQL (MySQL)</div><div class="sk-item">Data Queries</div><div class="sk-item">Power BI (Learning)</div><div class="sk-item">SaaS Data Extraction</div></div></div>
-      <div class="sk-card"><div class="sk-icon">🎧</div><div class="sk-head">IT Operations &amp; ITSM</div><div class="sk-items"><div class="sk-item hi">ServiceNow</div><div class="sk-item">Jira / Zendesk</div><div class="sk-item">SLA Management</div><div class="sk-item">Incident Management</div><div class="sk-item">Root Cause Analysis</div></div></div>
-      <div class="sk-card"><div class="sk-icon">💡</div><div class="sk-head">Cloud Concepts</div><div class="sk-items"><div class="sk-item hi">IaaS / PaaS / SaaS</div><div class="sk-item">High Availability</div><div class="sk-item">Scalability</div><div class="sk-item">Identity-first Security</div><div class="sk-item">Cost Optimization</div></div></div>
+      <div class="sk-card"><div class="theme-icon">IaC</div><div class="sk-head">Infrastructure as Code</div><div class="sk-items"><div class="sk-item hi">Infrastructure as Code</div><div class="sk-item">Terraform (Learning)</div><div class="sk-item">ARM / Bicep</div><div class="sk-item">Declarative Infrastructure</div><div class="sk-item">Cloud Provisioning</div><div class="sk-item">Git-Based Deployments</div></div></div>
+      <div class="sk-card"><div class="theme-icon">DEV</div><div class="sk-head">DevOps &amp; Tools</div><div class="sk-items"><div class="sk-item hi">Git / GitHub</div><div class="sk-item">Version Control</div><div class="sk-item">HTML / JavaScript</div><div class="sk-item">Basic CI/CD</div><div class="sk-item">Deployment Pipelines</div><div class="sk-item">Vercel</div></div></div>
+      <div class="sk-card"><div class="theme-icon">PWR</div><div class="sk-head">Power Platform</div><div class="sk-items"><div class="sk-item hi">Power Apps</div><div class="sk-item hi">Power Automate</div><div class="sk-item">Microsoft Lists</div><div class="sk-item">API Integrations</div><div class="sk-item">Process Orchestration</div><div class="sk-item">Intelligent Automation</div></div></div>
+      <div class="sk-card"><div class="theme-icon">DAT</div><div class="sk-head">Data Operations &amp; Reporting</div><div class="sk-items"><div class="sk-item">SQL (MySQL)</div><div class="sk-item">Data Queries</div><div class="sk-item">Power BI (Learning)</div><div class="sk-item">Dashboard Reporting</div><div class="sk-item">Data Visualization</div><div class="sk-item">Reporting Automation</div></div></div>
+      <div class="sk-card"><div class="theme-icon">OPS</div><div class="sk-head">IT Operations &amp; ITSM</div><div class="sk-items"><div class="sk-item hi">ServiceNow</div><div class="sk-item">Jira / Zendesk</div><div class="sk-item">SLA Management</div><div class="sk-item">Incident Management</div><div class="sk-item">Root Cause Analysis</div><div class="sk-item">Operational Support</div></div></div>
+      <div class="sk-card"><div class="theme-icon">AI</div><div class="sk-head">AI-Augmented IT Ops</div><div class="sk-items"><div class="sk-item hi">AI-assisted Troubleshooting</div><div class="sk-item">Copilot-assisted Operations</div><div class="sk-item">AI-driven Workflow Optimization</div><div class="sk-item">AI-assisted Documentation</div><div class="sk-item">Cloud Operations</div></div></div></div>
     </div>
     <div class="strengths-bar">
       <div class="str-label">⭐ Core Strengths</div>
@@ -546,92 +558,92 @@ canvas#waveC{position:fixed;bottom:0;left:0;width:100%;height:210px;pointer-even
       <p class="proj-hero-sub">Real-world Microsoft 365, Cloud, and Automation solutions built to improve operations, security, and scalability.</p>
       <div class="tech-tags">
         <div class="tech-tag"><span>⊞</span> Microsoft 365</div>
-        <div class="tech-tag"><span>☁</span> Azure</div>
-        <div class="tech-tag"><span>⚙</span> Power Platform</div>
-        <div class="tech-tag"><span>🔐</span> Identity</div>
-        <div class="tech-tag"><span>🛡</span> Security</div>
-        <div class="tech-tag"><span>⚡</span> Automation</div>
+        <div class="tech-tag"><span>CLD</span> Azure</div>
+        <div class="tech-tag"><span>PWR</span> Power Platform</div>
+        <div class="tech-tag"><span>ID</span> Identity</div>
+        <div class="tech-tag"><span>SEC</span> Security</div>
+        <div class="tech-tag"><span>AUT</span> Automation</div>
       </div>
     </div>
   </div>
   <div class="filter-tabs reveal" id="filterTabs">
     <button class="f-tab active" onclick="filterProj(event,'all')">⊞ All Projects</button>
-    <button class="f-tab" onclick="filterProj(event,'identity')">🔐 Identity &amp; Security</button>
-    <button class="f-tab" onclick="filterProj(event,'automation')">⚡ Automation</button>
-    <button class="f-tab" onclick="filterProj(event,'platform')">⚙ Power Platform</button>
-    <button class="f-tab" onclick="filterProj(event,'endpoint')">💻 Endpoint</button>
-    <button class="f-tab" onclick="filterProj(event,'backup')">🗄 Backup &amp; Compliance</button>
-    <button class="f-tab" onclick="filterProj(event,'cloud')">☁ Cloud &amp; Infra</button>
+    <button class="f-tab" onclick="filterProj(event,'identity')"><span class="tab-icon">ID</span>Identity &amp; Security</button>
+    <button class="f-tab" onclick="filterProj(event,'automation')"><span class="tab-icon">AUT</span>Automation</button>
+    <button class="f-tab" onclick="filterProj(event,'platform')"><span class="tab-icon">PWR</span>Power Platform</button>
+    <button class="f-tab" onclick="filterProj(event,'endpoint')"><span class="tab-icon">END</span>Endpoint</button>
+    <button class="f-tab" onclick="filterProj(event,'backup')"><span class="tab-icon">BKP</span>Backup &amp; Compliance</button>
+    <button class="f-tab" onclick="filterProj(event,'cloud')"><span class="tab-icon">CLD</span>Cloud &amp; Infra</button>
   </div>
   <div class="proj-grid reveal" id="projGrid">
-    <div class="proj-card" data-cat="automation" onclick="showCS('cs1')">
-      <div class="proj-cat">⚡ Automation</div>
-      <h3>HR Intake &amp; Interview Automation System</h3>
-      <p>End-to-end automation solution streamlining candidate intake, data collection, tracking, and interview scheduling using Microsoft 365 tools.</p>
-      <div class="proj-pills"><span class="pp">Power Automate</span><span class="pp">MS Forms</span><span class="pp">MS Lists</span><span class="pp">Bookings</span></div>
-      <a class="view-cs">View Case Study →</a>
-    </div>
-    <div class="proj-card" data-cat="platform" onclick="showCS('cs2')">
-      <div class="proj-cat">⚙ Power Platform</div>
-      <h3>IT Onboarding Dashboard</h3>
-      <p>Smart onboarding system built in SharePoint that empowers HR to submit new hire data and enables IT to automate account creation and tracking.</p>
-      <div class="proj-pills"><span class="pp">SharePoint</span><span class="pp">Power Automate</span><span class="pp">Entra ID</span><span class="pp">Graph API</span></div>
-      <a class="view-cs">View Case Study →</a>
-    </div>
-    <div class="proj-card" data-cat="automation" onclick="showCS('cs3')">
-      <div class="proj-cat">⚡ Automation</div>
-      <h3>Automated User Provisioning System</h3>
-      <p>End-to-end automation provisioning new employee accounts, assigning licenses, enforcing MFA, and creating external service profiles across multiple BPO locations.</p>
-      <div class="proj-pills"><span class="pp">Power Automate</span><span class="pp">Entra ID</span><span class="pp">Five9 API</span><span class="pp">MFA</span></div>
-      <a class="view-cs">View Case Study →</a>
-    </div>
-    <div class="proj-card" data-cat="backup" onclick="showCS('cs4')">
-      <div class="proj-cat">🗄 Backup &amp; Compliance</div>
-      <h3>Microsoft Purview Data Governance &amp; Insider Risk</h3>
-      <p>Comprehensive data protection and compliance solution using Microsoft Purview across Microsoft 365 for a financial institution.</p>
-      <div class="proj-pills"><span class="pp">MS Purview</span><span class="pp">DLP</span><span class="pp">eDiscovery</span><span class="pp">IRM</span></div>
+    <div class="proj-card" data-cat="cloud" onclick="showCS('cs10')">
+      <div class="proj-cat"><span class="tab-icon">CLD</span>Cloud &amp; Infra</div>
+      <h3>M365 Cloud Migration &amp; Infrastructure Modernization</h3>
+      <p>Full migration from legacy on-premises infrastructure to a modern Microsoft 365 cloud environment improving security, collaboration, and scalability.</p>
+      <div class="proj-pills"><span class="pp">M365</span><span class="pp">Entra ID</span><span class="pp">Exchange Online</span><span class="pp">Intune</span></div>
       <a class="view-cs">View Case Study →</a>
     </div>
     <div class="proj-card" data-cat="identity" onclick="showCS('cs5')">
-      <div class="proj-cat">🔐 Identity &amp; Security</div>
+      <div class="proj-cat"><span class="tab-icon">ID</span>Identity &amp; Security</div>
       <h3>Microsoft Entra Conditional Access &amp; MFA Architecture</h3>
       <p>Zero Trust Conditional Access architecture securing Microsoft 365 with group-based access control, MFA enforcement, and location &amp; device restrictions.</p>
       <div class="proj-pills"><span class="pp">Entra ID</span><span class="pp">Conditional Access</span><span class="pp">MFA</span><span class="pp">Zero Trust</span></div>
       <a class="view-cs">View Case Study →</a>
     </div>
-    <div class="proj-card" data-cat="platform" onclick="showCS('cs6')">
-      <div class="proj-cat">⚙ Power Platform</div>
-      <h3>Power Apps Employee Offboarding Hub</h3>
-      <p>Centralized offboarding solution replacing scattered emails — department task management, bulk editing, IT ticket automation, and dashboard reporting.</p>
-      <div class="proj-pills"><span class="pp">Power Apps</span><span class="pp">Power Automate</span><span class="pp">SpiceWorks API</span><span class="pp">MS Lists</span></div>
-      <a class="view-cs">View Case Study →</a>
-    </div>
-    <div class="proj-card" data-cat="endpoint" onclick="showCS('cs7')">
-      <div class="proj-cat">💻 Endpoint</div>
-      <h3>Intune Endpoint Management &amp; Compliance</h3>
-      <p>Enterprise endpoint management deploying apps, configuration profiles, compliance policies, and security controls to standardize and secure corporate devices.</p>
-      <div class="proj-pills"><span class="pp">Intune</span><span class="pp">Autopilot</span><span class="pp">Entra ID</span><span class="pp">BitLocker</span></div>
-      <a class="view-cs">View Case Study →</a>
-    </div>
-    <div class="proj-card" data-cat="backup" onclick="showCS('cs8')">
-      <div class="proj-cat">🗄 Backup &amp; Compliance</div>
-      <h3>Datto M365 Backup &amp; Recovery Strategy</h3>
-      <p>Tenant-wide backup and recovery solution for Microsoft 365 using Datto SaaS Protection with infinite retention, ensuring data resilience and rapid restoration.</p>
-      <div class="proj-pills"><span class="pp">Datto</span><span class="pp">M365</span><span class="pp">MS Purview</span><span class="pp">Recovery</span></div>
-      <a class="view-cs">View Case Study →</a>
-    </div>
     <div class="proj-card" data-cat="identity" onclick="showCS('cs9')">
-      <div class="proj-cat">🔐 Identity &amp; Security</div>
+      <div class="proj-cat"><span class="tab-icon">ID</span>Identity &amp; Security</div>
       <h3>Unified SaaS Integration, API &amp; SSO Architecture</h3>
       <p>Centralized automation framework using Entra ID, Power Automate, APIs, and SSO to automate user provisioning and access across multiple SaaS platforms.</p>
       <div class="proj-pills"><span class="pp">Entra ID</span><span class="pp">SAML SSO</span><span class="pp">Power Automate</span><span class="pp">REST API</span></div>
       <a class="view-cs">View Case Study →</a>
     </div>
-    <div class="proj-card" data-cat="cloud" onclick="showCS('cs10')">
-      <div class="proj-cat">☁ Cloud &amp; Infra</div>
-      <h3>M365 Cloud Migration &amp; Infrastructure Modernization</h3>
-      <p>Full migration from legacy on-premises infrastructure to a modern Microsoft 365 cloud environment improving security, collaboration, and scalability.</p>
-      <div class="proj-pills"><span class="pp">M365</span><span class="pp">Entra ID</span><span class="pp">Exchange Online</span><span class="pp">Intune</span></div>
+    <div class="proj-card" data-cat="automation" onclick="showCS('cs3')">
+      <div class="proj-cat"><span class="tab-icon">AUT</span>Automation</div>
+      <h3>Automated User Provisioning System</h3>
+      <p>End-to-end automation provisioning new employee accounts, assigning licenses, enforcing MFA, and creating external service profiles across multiple BPO locations.</p>
+      <div class="proj-pills"><span class="pp">Power Automate</span><span class="pp">Entra ID</span><span class="pp">Five9 API</span><span class="pp">MFA</span></div>
+      <a class="view-cs">View Case Study →</a>
+    </div>
+    <div class="proj-card" data-cat="automation" onclick="showCS('cs1')">
+      <div class="proj-cat"><span class="tab-icon">AUT</span>Automation</div>
+      <h3>HR Intake &amp; Interview Automation System</h3>
+      <p>End-to-end automation solution streamlining candidate intake, data collection, tracking, and interview scheduling using Microsoft 365 tools.</p>
+      <div class="proj-pills"><span class="pp">Power Automate</span><span class="pp">MS Forms</span><span class="pp">MS Lists</span><span class="pp">Bookings</span></div>
+      <a class="view-cs">View Case Study →</a>
+    </div>
+    <div class="proj-card" data-cat="platform" onclick="showCS('cs6')">
+      <div class="proj-cat"><span class="tab-icon">PWR</span>Power Platform</div>
+      <h3>Power Apps Employee Offboarding Hub</h3>
+      <p>Centralized offboarding solution replacing scattered emails — department task management, bulk editing, IT ticket automation, and dashboard reporting.</p>
+      <div class="proj-pills"><span class="pp">Power Apps</span><span class="pp">Power Automate</span><span class="pp">SpiceWorks API</span><span class="pp">MS Lists</span></div>
+      <a class="view-cs">View Case Study →</a>
+    </div>
+    <div class="proj-card" data-cat="platform" onclick="showCS('cs2')">
+      <div class="proj-cat"><span class="tab-icon">PWR</span>Power Platform</div>
+      <h3>IT Onboarding Dashboard</h3>
+      <p>Smart onboarding system built in SharePoint that empowers HR to submit new hire data and enables IT to automate account creation and tracking.</p>
+      <div class="proj-pills"><span class="pp">SharePoint</span><span class="pp">Power Automate</span><span class="pp">Entra ID</span><span class="pp">Graph API</span></div>
+      <a class="view-cs">View Case Study →</a>
+    </div>
+    <div class="proj-card" data-cat="endpoint" onclick="showCS('cs7')">
+      <div class="proj-cat"><span class="tab-icon">END</span>Endpoint</div>
+      <h3>Intune Endpoint Management &amp; Compliance</h3>
+      <p>Enterprise endpoint management deploying apps, configuration profiles, compliance policies, and security controls to standardize and secure corporate devices.</p>
+      <div class="proj-pills"><span class="pp">Intune</span><span class="pp">Autopilot</span><span class="pp">Entra ID</span><span class="pp">BitLocker</span></div>
+      <a class="view-cs">View Case Study →</a>
+    </div>
+    <div class="proj-card" data-cat="backup" onclick="showCS('cs4')">
+      <div class="proj-cat"><span class="tab-icon">BKP</span>Backup &amp; Compliance</div>
+      <h3>Microsoft Purview Data Governance &amp; Insider Risk</h3>
+      <p>Comprehensive data protection and compliance solution using Microsoft Purview across Microsoft 365 for a financial institution.</p>
+      <div class="proj-pills"><span class="pp">MS Purview</span><span class="pp">DLP</span><span class="pp">eDiscovery</span><span class="pp">IRM</span></div>
+      <a class="view-cs">View Case Study →</a>
+    </div>
+    <div class="proj-card" data-cat="backup" onclick="showCS('cs8')">
+      <div class="proj-cat"><span class="tab-icon">BKP</span>Backup &amp; Compliance</div>
+      <h3>Datto M365 Backup &amp; Recovery Strategy</h3>
+      <p>Tenant-wide backup and recovery solution for Microsoft 365 using Datto SaaS Protection with infinite retention, ensuring data resilience and rapid restoration.</p>
+      <div class="proj-pills"><span class="pp">Datto</span><span class="pp">M365</span><span class="pp">MS Purview</span><span class="pp">Recovery</span></div>
       <a class="view-cs">View Case Study →</a>
     </div>
   </div>
@@ -666,7 +678,7 @@ canvas#waveC{position:fixed;bottom:0;left:0;width:100%;height:210px;pointer-even
 <div id="cs1" class="page">
 <div class="cs-wrap">
   <div class="cs-sig"><img class="cs-sig-img" src="https://raw.githubusercontent.com/prachi8833/Portfolio/main/initial%20logo%20PP%20Lion.png" alt="PP"/><span class="cs-sig-name">Prachi Patel</span></div>
-  <div><span class="cs-num">PROJECT 01</span><span class="cs-cat-tag">Automation</span></div>
+  <div><span class="cs-num">PROJECT 05</span><span class="cs-cat-tag">Automation</span></div>
   <div class="cs-title">HR Intake &amp; Interview<br><span class="blue">Automation System</span></div>
   <div class="cs-tagline">Automated<span class="tdot">•</span>Smart<span class="tdot">•</span>Faster Hiring</div>
   <p class="cs-desc">An end-to-end automation solution that streamlines candidate intake, data collection, tracking, and interview scheduling using Microsoft 365 tools. Reduces manual HR effort significantly and eliminates back-and-forth email communication.</p>
@@ -725,7 +737,7 @@ canvas#waveC{position:fixed;bottom:0;left:0;width:100%;height:210px;pointer-even
 <div id="cs2" class="page">
 <div class="cs-wrap">
   <div class="cs-sig"><img class="cs-sig-img" src="https://raw.githubusercontent.com/prachi8833/Portfolio/main/initial%20logo%20PP%20Lion.png" alt="PP"/><span class="cs-sig-name">Prachi Patel</span></div>
-  <div><span class="cs-num">PROJECT 02</span><span class="cs-cat-tag">Power Platform</span></div>
+  <div><span class="cs-num">PROJECT 07</span><span class="cs-cat-tag">Power Platform</span></div>
   <div class="cs-title">IT Onboarding<br><span class="blue">Dashboard</span></div>
   <div class="cs-tagline">Smart<span class="tdot">•</span>Fast<span class="tdot">•</span>Accurate<span class="tdot">•</span>Scalable</div>
   <p class="cs-desc">A fully custom internal web application built inside Microsoft SharePoint Online that eliminates manual data entry, reduces onboarding errors, and centralizes the entire new hire account creation workflow for a multi-location company operating across the US, Mexico, El Salvador, and the Philippines.</p>
@@ -778,7 +790,7 @@ canvas#waveC{position:fixed;bottom:0;left:0;width:100%;height:210px;pointer-even
 <div id="cs3" class="page">
 <div class="cs-wrap">
   <div class="cs-sig"><img class="cs-sig-img" src="https://raw.githubusercontent.com/prachi8833/Portfolio/main/initial%20logo%20PP%20Lion.png" alt="PP"/><span class="cs-sig-name">Prachi Patel</span></div>
-  <div><span class="cs-num">PROJECT 03</span><span class="cs-cat-tag">Automation</span></div>
+  <div><span class="cs-num">PROJECT 04</span><span class="cs-cat-tag">Automation</span></div>
   <div class="cs-title">Automated User<br><span class="blue">Provisioning System</span></div>
   <div class="cs-tagline">Streamlining Onboarding with Microsoft 365, Power Automate &amp; External Integrations</div>
   <p class="cs-desc">End-to-end automation that provisions new employee accounts, assigns licenses, enforces security, and creates external service profiles across multiple BPO locations — reducing onboarding from 30–40 minutes to under 3 minutes.</p>
@@ -834,7 +846,7 @@ canvas#waveC{position:fixed;bottom:0;left:0;width:100%;height:210px;pointer-even
 <div id="cs4" class="page">
 <div class="cs-wrap">
   <div class="cs-sig"><img class="cs-sig-img" src="https://raw.githubusercontent.com/prachi8833/Portfolio/main/initial%20logo%20PP%20Lion.png" alt="PP"/><span class="cs-sig-name">Prachi Patel</span></div>
-  <div><span class="cs-num">PROJECT 04</span><span class="cs-cat-tag">Backup &amp; Compliance</span></div>
+  <div><span class="cs-num">PROJECT 09</span><span class="cs-cat-tag">Backup &amp; Compliance</span></div>
   <div class="cs-title">Microsoft Purview<br><span class="blue">Data Governance &amp; Insider Risk</span></div>
   <div class="cs-tagline">Data Protection<span class="tdot">•</span>Risk Detection<span class="tdot">•</span>Lifecycle Management<span class="tdot">•</span>Audit &amp; Investigation</div>
   <p class="cs-desc">A comprehensive data protection and compliance solution using Microsoft Purview across Microsoft 365 for a financial institution — combining automated classification, DLP enforcement, audit-driven investigations, and lifecycle-based risk monitoring.</p>
@@ -877,7 +889,7 @@ canvas#waveC{position:fixed;bottom:0;left:0;width:100%;height:210px;pointer-even
 <div id="cs5" class="page">
 <div class="cs-wrap">
   <div class="cs-sig"><img class="cs-sig-img" src="https://raw.githubusercontent.com/prachi8833/Portfolio/main/initial%20logo%20PP%20Lion.png" alt="PP"/><span class="cs-sig-name">Prachi Patel</span></div>
-  <div><span class="cs-num">PROJECT 05</span><span class="cs-cat-tag">Identity &amp; Security</span></div>
+  <div><span class="cs-num">PROJECT 02</span><span class="cs-cat-tag">Identity &amp; Security</span></div>
   <div class="cs-title">Microsoft Entra Conditional Access<br><span class="blue">&amp; MFA Architecture</span></div>
   <div class="cs-tagline">Zero Trust Identity Security for Microsoft 365</div>
   <p class="cs-desc">Designed and implemented a Zero Trust Conditional Access architecture in Microsoft Entra ID to secure Microsoft 365 services using group-based access control, MFA enforcement, location &amp; device restrictions, and automated security policy assignment.</p>
@@ -989,7 +1001,7 @@ canvas#waveC{position:fixed;bottom:0;left:0;width:100%;height:210px;pointer-even
 <div id="cs7" class="page">
 <div class="cs-wrap">
   <div class="cs-sig"><img class="cs-sig-img" src="https://raw.githubusercontent.com/prachi8833/Portfolio/main/initial%20logo%20PP%20Lion.png" alt="PP"/><span class="cs-sig-name">Prachi Patel</span></div>
-  <div><span class="cs-num">PROJECT 07</span><span class="cs-cat-tag">Endpoint</span></div>
+  <div><span class="cs-num">PROJECT 08</span><span class="cs-cat-tag">Endpoint</span></div>
   <div class="cs-title">Intune Endpoint Management<br><span class="blue">&amp; Compliance</span></div>
   <div class="cs-tagline">Secure<span class="tdot">|</span>Manage<span class="tdot">|</span>Standardize<span class="tdot">|</span>Comply</div>
   <p class="cs-desc">Designed and implemented comprehensive endpoint management in Microsoft Intune by building and deploying apps, configuration profiles, compliance policies, and security controls to standardize devices, strengthen security, and ensure compliance across the organization.</p>
@@ -1032,7 +1044,7 @@ canvas#waveC{position:fixed;bottom:0;left:0;width:100%;height:210px;pointer-even
 <div id="cs8" class="page">
 <div class="cs-wrap">
   <div class="cs-sig"><img class="cs-sig-img" src="https://raw.githubusercontent.com/prachi8833/Portfolio/main/initial%20logo%20PP%20Lion.png" alt="PP"/><span class="cs-sig-name">Prachi Patel</span></div>
-  <div><span class="cs-num">PROJECT 08</span><span class="cs-cat-tag">Backup &amp; Compliance</span></div>
+  <div><span class="cs-num">PROJECT 10</span><span class="cs-cat-tag">Backup &amp; Compliance</span></div>
   <div class="cs-title">Datto M365 Backup<br><span class="blue">&amp; Recovery Strategy</span></div>
   <div class="cs-tagline">Tenant-wide Backup<span class="tdot">•</span>Data Protection<span class="tdot">•</span>Rapid Recovery</div>
   <p class="cs-desc">A comprehensive, tenant-wide backup and recovery solution for Microsoft 365 using Datto SaaS Protection with infinite retention, ensuring data resilience, compliance, and rapid restoration across Exchange Online, OneDrive, SharePoint, and Teams.</p>
@@ -1087,7 +1099,7 @@ canvas#waveC{position:fixed;bottom:0;left:0;width:100%;height:210px;pointer-even
 <div id="cs9" class="page">
 <div class="cs-wrap">
   <div class="cs-sig"><img class="cs-sig-img" src="https://raw.githubusercontent.com/prachi8833/Portfolio/main/initial%20logo%20PP%20Lion.png" alt="PP"/><span class="cs-sig-name">Prachi Patel</span></div>
-  <div><span class="cs-num">PROJECT 09</span><span class="cs-cat-tag">Identity &amp; Security</span></div>
+  <div><span class="cs-num">PROJECT 03</span><span class="cs-cat-tag">Identity &amp; Security</span></div>
   <div class="cs-title">Unified SaaS Integration,<br><span class="blue">API &amp; SSO Architecture</span></div>
   <div class="cs-tagline">Automating User Provisioning, Access &amp; Asset Management Across Multiple SaaS Platforms</div>
   <p class="cs-desc">Implemented a centralized automation and integration framework using Microsoft Entra ID, Power Automate, APIs, and SSO to eliminate manual user creation across multiple platforms — drastically reducing onboarding time and eliminating inconsistent access.</p>
@@ -1140,11 +1152,11 @@ canvas#waveC{position:fixed;bottom:0;left:0;width:100%;height:210px;pointer-even
 <div id="cs10" class="page">
 <div class="cs-wrap">
   <div class="cs-sig"><img class="cs-sig-img" src="https://raw.githubusercontent.com/prachi8833/Portfolio/main/initial%20logo%20PP%20Lion.png" alt="PP"/><span class="cs-sig-name">Prachi Patel</span></div>
-  <div><span class="cs-num">PROJECT 10</span><span class="cs-cat-tag">Cloud &amp; Infrastructure</span></div>
+  <div><span class="cs-num">PROJECT 01</span><span class="cs-cat-tag">Cloud &amp; Infrastructure</span></div>
   <div class="cs-title">M365 Cloud Migration &amp;<br><span class="blue">Infrastructure Modernization</span></div>
   <div class="cs-tagline">Assess<span class="tdot">•</span>Plan<span class="tdot">•</span>Migrate<span class="tdot">•</span>Validate<span class="tdot">•</span>Optimize</div>
   <p class="cs-desc">Migrated legacy on-premises infrastructure to a modern Microsoft 365 cloud environment. This transformation improved security, streamlined management, enhanced collaboration, and optimized the overall IT ecosystem — replacing legacy AD, Exchange Server, WSUS, shared folders, and aging hardware.</p>
-  <div class="cs-badges"><div class="cs-badge">🔐 Identity Modernization</div><div class="cs-badge">📧 Exchange Online Migration</div><div class="cs-badge">💻 Endpoint Management</div><div class="cs-badge">📁 File Collaboration</div></div>
+  <div class="cs-badges"><div class="cs-badge">🔐 Identity Modernization</div><div class="cs-badge">📧 Exchange Online Migration</div><div class="cs-badge"><span class="tab-icon">END</span>Endpoint Management</div><div class="cs-badge">📁 File Collaboration</div></div>
 <div class="cs-arch-diagram reveal" style="margin-bottom:28px;background:var(--card);border:1px solid var(--border);border-radius:12px;padding:20px;">
   <div style="font-size:0.7rem;font-weight:700;color:var(--blue);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:14px;display:flex;align-items:center;gap:8px;"><span style="width:16px;height:2px;background:var(--blue);display:inline-block;border-radius:2px;"></span>Architecture Flow</div>
   <svg viewBox="0 0 1120 160" xmlns="http://www.w3.org/2000/svg" style="width:100%;border-radius:10px;"><rect x="35" y="20" width="100" height="70" rx="8" fill="#0a1628" stroke="#888" stroke-width="1.5" stroke-opacity="0.6"/><circle cx="85" cy="42" r="14" fill="#888" fill-opacity="0.15" stroke="#888" stroke-width="1"/><text x="85" y="47" text-anchor="middle" font-size="14" fill="#888">🏢</text><text x="85" y="70" text-anchor="middle" font-size="9" fill="#b0c0d8" font-family="Inter,sans-serif" font-weight="600">Legacy AD</text><text x="85" y="87" text-anchor="middle" font-size="8" fill="#5a6a8a" font-family="Inter,sans-serif">On-Premises</text><line x1="139" y1="55" x2="166" y2="55" stroke="#4a8fd4" stroke-width="1.5" stroke-opacity="0.5"/><polygon points="166,51 173,55 166,59" fill="#4a8fd4" fill-opacity="0.7"/><rect x="170" y="20" width="100" height="70" rx="8" fill="#0a1628" stroke="#ffa500" stroke-width="1.5" stroke-opacity="0.6"/><circle cx="220" cy="42" r="14" fill="#ffa500" fill-opacity="0.15" stroke="#ffa500" stroke-width="1"/><text x="220" y="47" text-anchor="middle" font-size="14" fill="#ffa500">📊</text><text x="220" y="65" text-anchor="middle" font-size="9" fill="#b0c0d8" font-family="Inter,sans-serif" font-weight="600">Assess</text><text x="220" y="76" text-anchor="middle" font-size="9" fill="#b0c0d8" font-family="Inter,sans-serif" font-weight="600">& Plan</text><text x="220" y="87" text-anchor="middle" font-size="8" fill="#5a6a8a" font-family="Inter,sans-serif">Inventory</text><line x1="274" y1="55" x2="301" y2="55" stroke="#4a8fd4" stroke-width="1.5" stroke-opacity="0.5"/><polygon points="301,51 308,55 301,59" fill="#4a8fd4" fill-opacity="0.7"/><rect x="305" y="20" width="100" height="70" rx="8" fill="#0a1628" stroke="#0078d4" stroke-width="1.5" stroke-opacity="0.6"/><circle cx="355" cy="42" r="14" fill="#0078d4" fill-opacity="0.15" stroke="#0078d4" stroke-width="1"/><text x="355" y="47" text-anchor="middle" font-size="14" fill="#0078d4">☁</text><text x="355" y="70" text-anchor="middle" font-size="9" fill="#b0c0d8" font-family="Inter,sans-serif" font-weight="600">Migrate</text><text x="355" y="87" text-anchor="middle" font-size="8" fill="#5a6a8a" font-family="Inter,sans-serif">To M365 Cloud</text><line x1="409" y1="55" x2="436" y2="55" stroke="#4a8fd4" stroke-width="1.5" stroke-opacity="0.5"/><polygon points="436,51 443,55 436,59" fill="#4a8fd4" fill-opacity="0.7"/><rect x="440" y="20" width="100" height="70" rx="8" fill="#0a1628" stroke="#0078d4" stroke-width="1.5" stroke-opacity="0.6"/><circle cx="490" cy="42" r="14" fill="#0078d4" fill-opacity="0.15" stroke="#0078d4" stroke-width="1"/><text x="490" y="47" text-anchor="middle" font-size="14" fill="#0078d4">🔷</text><text x="490" y="70" text-anchor="middle" font-size="9" fill="#b0c0d8" font-family="Inter,sans-serif" font-weight="600">Entra ID</text><text x="490" y="87" text-anchor="middle" font-size="8" fill="#5a6a8a" font-family="Inter,sans-serif">Cloud Identity</text><line x1="544" y1="55" x2="571" y2="55" stroke="#4a8fd4" stroke-width="1.5" stroke-opacity="0.5"/><polygon points="571,51 578,55 571,59" fill="#4a8fd4" fill-opacity="0.7"/><rect x="575" y="20" width="100" height="70" rx="8" fill="#0a1628" stroke="#0078d4" stroke-width="1.5" stroke-opacity="0.6"/><circle cx="625" cy="42" r="14" fill="#0078d4" fill-opacity="0.15" stroke="#0078d4" stroke-width="1"/><text x="625" y="47" text-anchor="middle" font-size="14" fill="#0078d4">📧</text><text x="625" y="70" text-anchor="middle" font-size="9" fill="#b0c0d8" font-family="Inter,sans-serif" font-weight="600">Exchange Online</text><text x="625" y="87" text-anchor="middle" font-size="8" fill="#5a6a8a" font-family="Inter,sans-serif">Cloud Email</text><line x1="679" y1="55" x2="706" y2="55" stroke="#4a8fd4" stroke-width="1.5" stroke-opacity="0.5"/><polygon points="706,51 713,55 706,59" fill="#4a8fd4" fill-opacity="0.7"/><rect x="710" y="20" width="100" height="70" rx="8" fill="#0a1628" stroke="#0078d4" stroke-width="1.5" stroke-opacity="0.6"/><circle cx="760" cy="42" r="14" fill="#0078d4" fill-opacity="0.15" stroke="#0078d4" stroke-width="1"/><text x="760" y="47" text-anchor="middle" font-size="14" fill="#0078d4">📱</text><text x="760" y="70" text-anchor="middle" font-size="9" fill="#b0c0d8" font-family="Inter,sans-serif" font-weight="600">Intune</text><text x="760" y="87" text-anchor="middle" font-size="8" fill="#5a6a8a" font-family="Inter,sans-serif">Device Mgmt</text><line x1="814" y1="55" x2="841" y2="55" stroke="#4a8fd4" stroke-width="1.5" stroke-opacity="0.5"/><polygon points="841,51 848,55 841,59" fill="#4a8fd4" fill-opacity="0.7"/><rect x="845" y="20" width="100" height="70" rx="8" fill="#0a1628" stroke="#0078d4" stroke-width="1.5" stroke-opacity="0.6"/><circle cx="895" cy="42" r="14" fill="#0078d4" fill-opacity="0.15" stroke="#0078d4" stroke-width="1"/><text x="895" y="47" text-anchor="middle" font-size="14" fill="#0078d4">📁</text><text x="895" y="70" text-anchor="middle" font-size="9" fill="#b0c0d8" font-family="Inter,sans-serif" font-weight="600">SharePoint</text><text x="895" y="87" text-anchor="middle" font-size="8" fill="#5a6a8a" font-family="Inter,sans-serif">Collaboration</text><line x1="949" y1="55" x2="976" y2="55" stroke="#4a8fd4" stroke-width="1.5" stroke-opacity="0.5"/><polygon points="976,51 983,55 976,59" fill="#4a8fd4" fill-opacity="0.7"/><rect x="980" y="20" width="100" height="70" rx="8" fill="#0a1628" stroke="#4ade80" stroke-width="1.5" stroke-opacity="0.6"/><circle cx="1030" cy="42" r="14" fill="#4ade80" fill-opacity="0.15" stroke="#4ade80" stroke-width="1"/><text x="1030" y="47" text-anchor="middle" font-size="14" fill="#4ade80">✅</text><text x="1030" y="70" text-anchor="middle" font-size="9" fill="#b0c0d8" font-family="Inter,sans-serif" font-weight="600">Optimized</text><text x="1030" y="87" text-anchor="middle" font-size="8" fill="#5a6a8a" font-family="Inter,sans-serif">Cloud-First</text><text x="85" y="152" text-anchor="middle" font-size="7.5" fill="#4a8fd4" font-family="Inter,sans-serif" font-weight="500">Assess</text><text x="220" y="152" text-anchor="middle" font-size="7.5" fill="#4a8fd4" font-family="Inter,sans-serif" font-weight="500">Plan</text><text x="355" y="152" text-anchor="middle" font-size="7.5" fill="#4a8fd4" font-family="Inter,sans-serif" font-weight="500">Migrate</text><text x="490" y="152" text-anchor="middle" font-size="7.5" fill="#4a8fd4" font-family="Inter,sans-serif" font-weight="500">Identity</text><text x="625" y="152" text-anchor="middle" font-size="7.5" fill="#4a8fd4" font-family="Inter,sans-serif" font-weight="500">Email</text><text x="760" y="152" text-anchor="middle" font-size="7.5" fill="#4a8fd4" font-family="Inter,sans-serif" font-weight="500">Devices</text><text x="895" y="152" text-anchor="middle" font-size="7.5" fill="#4a8fd4" font-family="Inter,sans-serif" font-weight="500">Files</text><text x="1030" y="152" text-anchor="middle" font-size="7.5" fill="#4a8fd4" font-family="Inter,sans-serif" font-weight="500">Optimize</text></svg>
@@ -1189,7 +1201,7 @@ canvas#waveC{position:fixed;bottom:0;left:0;width:100%;height:210px;pointer-even
     <div class="sec-title">Certifications</div>
     <p class="sec-sub" style="margin:0 auto;">Professional certifications validating expertise in cloud, identity, security, and modern workplace technologies.</p>
   </div>
-  <div class="cert-section-title reveal">🏆 Earned Certifications</div>
+  <div class="cert-section-title reveal">Earned Certifications</div>
   <div class="certs-grid reveal">
     <a class="cert-card" href="https://learn.microsoft.com/api/credentials/share/en-us/Prachi8833/1D797333C60DD439?sharingId=86D4DB87D6F331E1" target="_blank">
       <div class="cert-ms-badge" style="background:linear-gradient(135deg,#0078d4,#005a9e);color:#fff;width:52px;height:52px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:0.65rem;font-weight:800;letter-spacing:0.02em;text-align:center;line-height:1.2;">MS<br>EXPERT</div>
@@ -1234,18 +1246,16 @@ canvas#waveC{position:fixed;bottom:0;left:0;width:100%;height:210px;pointer-even
       <div class="cert-link-btn">View Credential ↗</div>
     </a>
   </div>
-  <div class="cert-section-title reveal" style="margin-top:36px;">🎯 Certifications I Plan to Pursue</div>
+  <div class="cert-section-title reveal" style="margin-top:36px;">Certifications I Plan to Pursue</div>
   <div class="wip-grid reveal">
-    <div class="cert-card"><div style="font-size:2rem;">🔵</div><div class="cert-name">AZ-104: Azure Administrator Associate</div><div class="cert-issuer">Microsoft</div><div class="cert-wip">⏳ In Progress</div></div>
-    <div class="cert-card"><div style="font-size:2rem;">🏗️</div><div class="cert-name">AZ-305: Azure Solutions Architect Expert</div><div class="cert-issuer">Microsoft</div><div class="cert-wip">⏳ In Progress</div></div>
-    <div class="cert-card"><div style="font-size:2rem;">🤖</div><div class="cert-name">AI-102: Azure AI Engineer Associate</div><div class="cert-issuer">Microsoft</div><div class="cert-wip">⏳ In Progress</div></div>
-    <div class="cert-card"><div style="font-size:2rem;">💡</div><div class="cert-name">AB-410: Intelligent Applications Builder Associate</div><div class="cert-issuer">Microsoft</div><div class="cert-wip">⏳ In Progress</div></div>
-    <div class="cert-card"><div style="font-size:2rem;">⚙️</div><div class="cert-name">PL-400: Power Platform Developer</div><div class="cert-issuer">Microsoft</div><div class="cert-wip">⏳ In Progress</div></div>
+    <div class="cert-card"><div class="cert-mini-badge">AZ<br>104</div><div class="cert-name">AZ-104: Azure Administrator Associate</div><div class="cert-issuer">Microsoft</div><div class="cert-wip">In Progress</div></div>
+    <div class="cert-card"><div class="cert-mini-badge">AZ<br>305</div><div class="cert-name">AZ-305: Azure Solutions Architect Expert</div><div class="cert-issuer">Microsoft</div><div class="cert-wip">In Progress</div></div>
+    <div class="cert-card"><div class="cert-mini-badge">AI<br>102</div><div class="cert-name">AI-102: Azure AI Engineer Associate</div><div class="cert-issuer">Microsoft</div><div class="cert-wip">In Progress</div></div>
+    <div class="cert-card"><div class="cert-mini-badge">AB<br>410</div><div class="cert-name">AB-410: Intelligent Applications Builder Associate</div><div class="cert-issuer">Microsoft</div><div class="cert-wip">In Progress</div></div>
+    <div class="cert-card"><div class="cert-mini-badge">PL<br>400</div><div class="cert-name">PL-400: Power Platform Developer</div><div class="cert-issuer">Microsoft</div><div class="cert-wip">In Progress</div></div><div class="cert-issuer">Microsoft</div><div class="cert-wip">⏳ In Progress</div></div>
   </div>
   <div class="cert-bottom-bar reveal">
-    <span style="font-size:1.4rem;">🌟</span>
     <p>Continuously learning and staying certified to deliver secure, modern, and efficient solutions.</p>
-    <span style="font-size:1.4rem;">🏆</span>
   </div>
 </div>
 </div>
@@ -1270,29 +1280,41 @@ canvas#waveC{position:fixed;bottom:0;left:0;width:100%;height:210px;pointer-even
       <div class="contact-div"></div>
       <div class="contact-items">
         <a class="c-item" href="mailto:prachipatel833@gmail.com">
-          <div class="c-icon">✉️</div>
+          <div class="contact-icon">@</div>
           <div><div class="c-label">Email</div><div class="c-val">prachipatel833@gmail.com</div></div>
         </a>
         <a class="c-item" href="tel:9023881209">
-          <div class="c-icon">📞</div>
+          <div class="contact-icon">TEL</div>
           <div><div class="c-label">Phone</div><div class="c-val">(902)-388-1209</div></div>
         </a>
         <div class="c-item">
-          <div class="c-icon">📍</div>
+          <div class="contact-icon">LOC</div>
           <div><div class="c-label">Location</div><div class="c-val">Vancouver, BC, Canada</div></div>
         </div>
         <a class="c-item" href="https://github.com/prachi8833" target="_blank">
-          <div class="c-icon">💻</div>
+          <div class="contact-icon">WEB</div>
           <div><div class="c-label">GitHub</div><div class="c-val">github.com/prachi8833</div></div>
         </a>
         <a class="c-item" href="https://linkedin.com/in/prachi8833" target="_blank">
-          <div class="c-icon">💼</div>
+          <div class="contact-icon">IN</div>
           <div><div class="c-label">LinkedIn</div><div class="c-val">linkedin.com/in/prachi8833</div></div>
         </a>
       </div>
+      <div class="contact-open-box">
+        <div class="c-label">Open To Opportunities</div>
+        <div class="contact-pill-row">
+          <span class="contact-pill">Cloud Systems Engineer</span>
+          <span class="contact-pill">Azure / M365 Administrator</span>
+          <span class="contact-pill">Cloud Infrastructure</span>
+          <span class="contact-pill">Identity &amp; Security</span>
+          <span class="contact-pill">Full-Time</span>
+          <span class="contact-pill">Remote / Hybrid / On-Site</span>
+          <span class="contact-pill">Canada &amp; US</span>
+        </div>
+      </div>
       <div class="contact-about-box">
         <div class="c-label">About Me</div>
-        <p>I design and automate secure, scalable cloud solutions that help organizations streamline operations, strengthen security, and drive real business impact.</p>
+        <p>I design and automate secure Microsoft cloud environments across identity, endpoint management, infrastructure operations, and business process automation.</p>
       </div>
     </div>
   </div>
